@@ -11,14 +11,29 @@
         }
         main{background-color:#fffbf8;}
         h2{color:black;}
-        header{background-image:url("image/woodenPhoto.webp");}
+        header{background-image:url("image/woodenPhoto.webp"); top:0;}
+        .article{background-color:goldenrod;
+                border-radius:10px;
+                width:500px;
+                height:200px;
+                cursor:pointer;
+                padding:10px;
+                display:flex;
+                align-items: center;
+                margin:20px;
+                }
+        .article_image{width:150px;
+                        height:150px;}
+        .article_image>img{width:150px;
+                            height:150px;
+                            }
     </style>
 </head>
 <body>
-    <header>
+    <header style="position:fixed;width:100%;">
         <h1 style = "color:white; font-family:游明朝体; text-align: center;">剣道</h1>
     </header>
-    <main style="margin: auto;margin-top:50px;padding:20px;border-radius: 10px; width: 70%;">
+    <main style="margin: auto;margin-top:50px;padding:20px;border-radius: 10px; width: 80%;">
         <h3>剣道とは？</h3>
         <p>剣道は剣道具を着用し竹刀を用いて一対一で打突しあう運動競技種目とみられますが、稽古を続けることによって心身を鍛錬し人間形成を目指す「武道」です。</p>
     
@@ -33,7 +48,7 @@
                 <img src="image/kendo.jpeg" style="width: 100%;">
             </div>
         </div>
-        <h3>剣道参考サイト</h3>
+       <!----<h3>剣道参考サイト</h3>
         <table>
             <tr>
                 <th>
@@ -59,7 +74,45 @@
                     剣道動画を見たい方はこちらから！
                 </th>
             </tr>
-        </table>
+        </table>-->
+        <div style="display:flex;flex-wrap:wrap;justify-content: center;">
+        <div class="article" onclick="location.href='article1.html'">
+            <div class="article_image">
+                 <img src="image/kendo.jpeg">
+            </div> 
+            <div style="display:block;height: 100%;width:100%;">
+                <h4 style="margin-top:25px;">あっかんべー</h4>
+                <br>これは記事１です。
+            </div>
+        </div>
+        <div class="article" onclick="location.href='article1.html'">
+            <div class="article_image">
+                 <img src="image/kendo.jpeg">
+            </div> 
+            <div style="display:block;height: 100%;width:100%;">
+                <h4 style="margin-top:25px;">あっかんべー</h4>
+                <br>これは記事１です。
+            </div>
+        </div>
+        <div class="article" onclick="location.href='article1.html'">
+            <div class="article_image">
+                 <img src="image/kendo.jpeg">
+            </div> 
+            <div style="display:block;height: 100%;width:100%;">
+                <h4 style="margin-top:25px;">あっかんべー</h4>
+                <br>これは記事１です。
+            </div>
+        </div>
+        <div class="article" onclick="location.href='article1.html'">
+            <div class="article_image">
+                 <img src="image/kendo.jpeg">
+            </div> 
+            <div style="display:block;height: 100%;width:100%;">
+                <h4 style="margin-top:25px;">あっかんべー</h4>
+                <br>これは記事１です。
+            </div>
+        </div>
+         </div>
     </main>
 
 
