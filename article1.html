@@ -8,5 +8,17 @@
 <body>
     Artcle 1
     <br>1のページです。
+
+    <p id="p">100</p>
+    <button id="button">ボタン</button>
 </body>
+<script>
+    let count=0;
+    const button=document.getElementById("button");
+    const p=document.getElementById("p");
+    button.addEventListener('click',()=>{
+    count +=1;    
+    p.textContent=count;    
+    })
+</script>
 </html>

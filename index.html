@@ -34,6 +34,7 @@
         <h1 style = "color:white; font-family:游明朝体; text-align: center;">剣道</h1>
     </header>
     <main style="margin: auto;margin-top:50px;padding:20px;border-radius: 10px; width: 80%;">
+
         <h3>剣道とは？</h3>
         <p>剣道は剣道具を着用し竹刀を用いて一対一で打突しあう運動競技種目とみられますが、稽古を続けることによって心身を鍛錬し人間形成を目指す「武道」です。</p>
     
@@ -76,45 +77,81 @@
             </tr>
         </table>-->
         <div style="display:flex;flex-wrap:wrap;justify-content: center;">
-        <div class="article" onclick="location.href='article1.html'">
-            <div class="article_image">
-                 <img src="image/kendo.jpeg">
-            </div> 
-            <div style="display:block;height: 100%;width:100%;">
-                <h4 style="margin-top:25px;">あっかんべー</h4>
-                <br>これは記事１です。
+            <div class="article" onclick="location.href='article1.html'">
+                <div class="article_image">
+                    <img src="image/kendo.jpeg">
+                </div> 
+                <div style="display:block;height: 100%;width:100%;">
+                    <h4 style="margin-top:25px;">あっかんべー</h4>
+                    <br>これは記事１です。
+                </div>
             </div>
-        </div>
-        <div class="article" onclick="location.href='article1.html'">
-            <div class="article_image">
-                 <img src="image/kendo.jpeg">
-            </div> 
-            <div style="display:block;height: 100%;width:100%;">
-                <h4 style="margin-top:25px;">あっかんべー</h4>
-                <br>これは記事１です。
+            <div class="article" onclick="location.href='article1.html'">
+                <div class="article_image">
+                    <img src="image/kendo.jpeg">
+                </div> 
+                <div style="display:block;height: 100%;width:100%;">
+                    <h4 style="margin-top:25px;">あっかんべー</h4>
+                    <br>これは記事１です。
+                </div>
             </div>
-        </div>
-        <div class="article" onclick="location.href='article1.html'">
-            <div class="article_image">
-                 <img src="image/kendo.jpeg">
-            </div> 
-            <div style="display:block;height: 100%;width:100%;">
-                <h4 style="margin-top:25px;">あっかんべー</h4>
-                <br>これは記事１です。
+            <div class="article" onclick="location.href='article1.html'">
+                <div class="article_image">
+                    <img src="image/kendo.jpeg">
+                </div> 
+                <div style="display:block;height: 100%;width:100%;">
+                    <h4 style="margin-top:25px;">あっかんべー</h4>
+                    <br>これは記事１です。
+                </div>
             </div>
-        </div>
-        <div class="article" onclick="location.href='article1.html'">
-            <div class="article_image">
-                 <img src="image/kendo.jpeg">
-            </div> 
-            <div style="display:block;height: 100%;width:100%;">
-                <h4 style="margin-top:25px;">あっかんべー</h4>
-                <br>これは記事１です。
+            <div class="article" onclick="location.href='article1.html'">
+                <div class="article_image">
+                    <img src="image/kendo.jpeg">
+                </div> 
+                <div style="display:block;height: 100%;width:100%;">
+                    <h4 style="margin-top:25px;">あっかんべー</h4>
+                    <br>これは記事１です。
+                </div>
             </div>
-        </div>
          </div>
-    </main>
+         <section>
+            <form id="form">
+                <h3>好きな色を選べ</h3>
+                <input type="radio" name="color" value="red">赤
+                <input type="radio" name="color" value="blue">青
+                <input type="radio" name="color" value="green">緑
 
+             <!----   <h3>好きな食べ物を選べ</h3>
+                <input type="checkbox" name="food">カツ丼
+                <input type="checkbox" name="food">親子丼
+                <input type="checkbox" name="food">海鮮丼-->
+
+                <br>
+                
+            </form>
+            <button onclick="reply()">送信</button>
+            <script>
+                const form=document.getElementById("form");
+                function reply (){
+                    const formdata=new FormData(form);
+                    const selectedcolor= formdata.get('color');
+                    if(selectedcolor==='red'){
+                        alert('赤');
+                    }
+                    else if(selectedcolor==='blue'){
+                        alert('青');
+                    }
+                    else if(selectedcolor==='green'){
+                        alert('緑');
+                    }
+                    
+                }
+
+            </script>
+        </section>
+
+    </main>
+    
 
 
     
